@@ -56,6 +56,7 @@ int main(int argc, char *argv[]) {
     TGraphErrors * g = new TGraphErrors (chain->GetEntries(),chain->GetV1(),chain->GetV2(),0,chain->GetV3());
     g->Draw("ap");
     gPad->Update();
+    g->SetTitle("Energy Efficiencies");
     g->GetXaxis()->SetTitle("energy [keV]");
     g->GetYaxis()->SetTitle("efficiency [1]");
     c->SaveAs(FileName_out+"_eff.pdf");
@@ -65,6 +66,7 @@ int main(int argc, char *argv[]) {
     TGraphErrors * g2 = new TGraphErrors (chain->GetEntries(),chain->GetV1(),chain->GetV2(),0,chain->GetV3());
     g2->Draw("ap");
     gPad->Update();
+    g2->SetTitle("Energy Branching Ratio Efficiencies");
     g2->GetXaxis()->SetTitle("energy [keV]");
     g2->GetYaxis()->SetTitle("eff_BR [1]");
     c2->SaveAs(FileName_out+"_effBR.pdf");
