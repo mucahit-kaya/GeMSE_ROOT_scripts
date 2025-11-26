@@ -1,5 +1,5 @@
 #include "macros.h"
-
+#include "TLine.h"
 TString fFileName_spectrum;
 std::vector<double> fenergy;
 std::vector<double> fch_mean;

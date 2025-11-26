@@ -1,4 +1,5 @@
 #include "macros.h"
+#include "TLine.h"
 
 TString fFileName_spectrum;
 std::vector<double> ffitrange_low;
